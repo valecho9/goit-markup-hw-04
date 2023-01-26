@@ -59,9 +59,11 @@ ul {
 .logo-footer {
   color: var(--accent-color);
 }
-.icon-nav {
+.icon-nav::before {
+  display: inline-block;
+  content: '';
   padding-right: 10px;
-  justify-content: flex-end;
+
   
   
   
@@ -210,8 +212,8 @@ ul {
 
   border-radius: 50px;
 }
-.social-list-link:hover ,
-.social-list-link:focus  {
+.social-list-link:hover .social-list-link,
+.social-list-link:focus .social-list-link {
   fill: var(--text-color);
 }
 .social-list-icon {
