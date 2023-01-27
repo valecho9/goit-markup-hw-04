@@ -60,14 +60,16 @@ ul {
   color: var(--accent-color);
 }
 .icon-nav::before {
-  display: inline-block;
+  display: flex;
   content: '';
   padding-right: 10px;
-
-  
-  
-  
-  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.icon-nav:hover,
+.icon-nav:focus {
+  fill: var(--text-color);
 }
 .list {
   list-style: none;
@@ -160,17 +162,23 @@ ul {
 }
 /*section*/
 .icon {
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  
+  justify-content: center;
+  align-items:center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
-/*.list-icon {}*/
+/*.list-icon {
+}*/
 .section-title {
   color: #2f303a;
 }
 .section-works {
   background-color: #f5f4fa;
+ 
 }
 /*h3*/
 .text-list:not(:last-child) {
@@ -199,26 +207,38 @@ ul {
   justify-content: center;
   margin-top: 16px;
 }
-.social-list:not(:last-child) {
+.social-list-item:not(:last-child) {
   margin-right: 10px;
+  
 }
+.social-list-item {
+  display: flex;
+ 
+ 
 
+}
 .social-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
   width: 44px;
   height: 44px;
 
   border-radius: 50px;
 }
-.social-list-link:hover .social-list-link,
-.social-list-link:focus .social-list-link {
-  fill: var(--text-color);
+.social-list-link:hover,
+.social-list-link:focus  {
+  background: var(--text-color);
 }
 .social-list-icon {
   fill:#afb1b8;
 }
+.social-list-link:hover svg,
+.social-list-link:focus  {
+  fill:var(--accent-color);
+}
+
 /*h2*/
 .caption-section {
   font-size: 36px;
@@ -226,6 +246,9 @@ ul {
   text-align: center;
 
   margin-bottom: 50px;
+}
+.aside-social {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .items-image {
   display: flex;
@@ -318,6 +341,47 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+}
+/*new section*/
+.subject {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-top: 94px;
+  margin-bottom: 50px;
+
+}
+.row {
+  display: flex;
+  justify-content: center;
+ 
+}
+.items-logo {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  margin-bottom: 94px;
+  justify-content: center;
+}
+.row :not(:last-child) {
+  margin-right: 30px;
+}
+.items-logo-link {
+  display: flex;
+  align-items: center;
+}
+.list-logo:hover,
+.list-logo:focus {
+ fill: var(--text-color);
+ 
+}
+.list-logo {
+  fill:#AFB1B8;
+ 
 }
 /*footer*/
 .footer {
