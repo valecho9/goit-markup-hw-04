@@ -59,18 +59,7 @@ ul {
 .logo-footer {
   color: var(--accent-color);
 }
-.icon-nav::before {
-  display: flex;
-  content: '';
-  padding-right: 10px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.icon-nav:hover,
-.icon-nav:focus {
-  fill: var(--text-color);
-}
+
 .list {
   list-style: none;
 }
@@ -113,6 +102,31 @@ ul {
   display: flex;
   margin-left: auto;
 }
+.thumb:hover, 
+.thumb:focus svg {
+  fill: var(--text-color);
+}
+.thumb {
+  display: flex;
+  margin-right: 10px;
+  text-align: center;
+  justify-content: flex-end;
+ 
+}
+.thumbnail {
+  margin-right: 10px;
+  align-items: center;
+  
+  
+}
+.icon-nav:hover,
+.icon-nav:focus {
+  fill: var(--text-color);
+}
+.icon-nav {
+  fill:#757575;
+}
+
 .auth-nav li:not(:last-child) {
   margin-right: 40px;
 }
@@ -378,6 +392,10 @@ ul {
 .list-logo:focus {
  fill: var(--text-color);
  
+}
+.items-logo-link:hover,
+.items-logo-link:focus {
+  fill: var(--text-color);
 }
 .list-logo {
   fill:#AFB1B8;
