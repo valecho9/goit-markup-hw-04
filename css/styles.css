@@ -107,6 +107,8 @@ ul {
  
 }*/
 .nav-link {
+  display: flex;
+  align-items: center;
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -218,7 +220,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-color);
+
   width: 44px;
   height: 44px;
 
@@ -245,6 +247,7 @@ ul {
   margin-bottom: 50px;
 }
 .aside-social {
+  background-color: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -286,8 +289,9 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-
+  border-radius: 4px;
   padding: 6px 22px;
+  border: none;
 }
 .items-btn {
   display: flex;
@@ -356,7 +360,6 @@ ul {
 }
 .items-logo {
   display: flex;
- 
 }
 .row :not(:last-child) {
   margin-right: 30px;
@@ -430,7 +433,6 @@ ul {
 .subtitle:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
 }
 
 .footer-contact {
@@ -438,7 +440,6 @@ ul {
 }
 .footer-aside {
   margin-left: 70px;
- 
 }
 .footer-subject {
   color: var(--accent-color);
